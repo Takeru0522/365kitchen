@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>365kitchen</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./slick/slick-theme.css">
+  <link rel="stylesheet" href="./slick/slick.css">
+  <meta name=“viewport” content=“width, initial-scale=1, shrink-to-fit=no”>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+      var setImg = '#photo';
+      var fadeSpeed = 1700;
+      var switchDelay = 4000;
+  
+      $(setImg).children('img').css({opacity:'0'});
+      $(setImg + ' img:first').stop().animate({opacity:'1'},fadeSpeed);
+  
+      setInterval(function(){
+        $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+      },switchDelay);
+    });
+    </script>    
+</head>
+
+<body>   
+  <div class="fixed-left">
+    <div class="slidebar">
+      <div class="sns">
+        <a href="https://www.facebook.com/365ckitchen/"><img src="./assets/img/facebook.png" width="22" height="22" alt=""></a>
+        <a href="https://www.instagram.com/gakumiyamoto/?hl=ja"><img src="./assets/img/instagram.png" width="22" height="22" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="header-left">
+      <img class="icon" src="./assets/img/icon.png" alt="">
+      <img class="h-logo" src="./assets/img/header-logo.png" alt="">
+    </div>
+    <div class="header-right">
+      <ul class="nav">
+        <li class="to-menu">menu</li>
+        <li class="to-access">access/contact</li>
+        <!-- <li class="to-contact">contact</li> -->
+      </ul>
+    </div>
+  </header>
+    
+  <div class="main-visual">
+    <div id="photo">
+      <img src="./assets/img/top/topppp.PNG" width="100%" height="100%" alt="">
+      <img src="./assets/img/top/スクリーンショット 2020-08-24 21.23.34.png" width="100%" height="100%" alt="">
+      <img src="./assets/img/top/スクリーンショット 2020-08-24 21.21.19.png" width="100%" height="100%" alt="">
+      <img src="./assets/img/top/スクリーンショット 2020-08-24 21.29.31.png" width="100%" height="100%" alt="">
+    </div>
+    <img class="logo" src="./assets/img/logo.png" alt="ロゴです">
+  </div>
+
+  <div class="photos">
+    <div class="photo scrollme">
+      <img class="animateme" src="./assets/img/food1.jpg" alt="食べ物" data-when="enter"
+      data-translatey="30"
+      data-translatex="0"
+      data-opacity="0"
+      data-to="0.15"
+      data-from="0.25">
+      
+      <img class="animateme" src="./assets/img/food2.jpg" alt="食べ物" data-when="enter"
+      data-translatey="60"
+      data-translatex="0"
+      data-opacity="0"
+      data-to="0.15"
+      data-from="0.45">
+    
+     <img class="animateme" src="./assets/img/food3.jpg" alt="食べ物" data-when="enter"
+      data-translatey="90"
+      data-translatex="0"
+      data-opacity="0"
+      data-to="0.15"
+      data-from="0.65">   
+    </div>
+  </div>
+        
+  <div class="concept-photo scrollme">
+    <img class="gaku animateme" src="./assets/img/top/IMG_0370.PNG" alt="写真です" data-opacity="0.5"
+    data-to="0.8"
+    data-from="0"
+    data-easing="easeinout"
+    data-when="enter">
+
+    <!-- <h1 class="concept-title">Concept</h1> -->
+
+    <div class="concept">
+    <h1 class="concept-title scrollme animateme" data-scale="0.5"
+    data-to="0.05"
+    data-from="0.25"
+    data-when="view">Concept</h1>
+    <div class="scrollme"></div>
+      <div class="concept-p animateme" src="./assets/img/top/IMG_0370.PNG" alt="写真です" data-opacity="0"
+      data-to="0.3"
+      data-from="0.6"
+      data-easing="easeinout"
+      data-when="liner">
+        <p class="txt1">ほんの少し人より暖かく</p>
+        <p class="txt2">ほんの少し人よりやる気がある</p>
+        <p class="txt3">そんなほんの少し人より微熱のある人々が集まるお店...</p>
+      </div>
+    </div>
+  </div>
+
+  <section id="menu"></section>
+  <div class="menu">
+    <div class="menu-photo scrollme">
+      <img class="menu-dish animateme" src="./assets/img/menu-dish.png" alt="写真です"data-when="enter"
+      data-translatey="0"
+      data-translatex="-800"
+      data-opacity="0"
+      data-to="0.1"
+      data-from="0.9">
+      <div class="menu-p">
+        <h1 class="menu-title">Menu</h1>
+        <p><span style="font-weight:bold">北海道出身</span>のオーナーシェフならではの、<br><span style="font-weight:bold">地元契約農家直送</span>の旬な素材をご提供！<br>素材そのものを活かしつつ、<br>目でも舌でも美味しい料理をご堪能ください。<br>また料理に合うスパークリングワインや<br>白ワインも多数取り揃えております。<br>コスパ抜群のディナーをお愉しみください。</p>
+        <a class="modalOpen" href="">>>more</a>
+        <div class="mask">
+          <div class="modal">
+            <img src="./assets/img/menubook.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="party scrollme">
+    <div class="party-content">
+      <div class="party-left">
+        <h1 class="party-title">Party</h1>
+        <p>隠れ家のようなカフェ的空間のなか、<br><span style="font-weight:bold">少人数のパーティー</span>を楽しみませんか？<br>貸し切りも予算に応じて対応いたします！<br>プロジェクターもご用意しております。<br>本格的な料理に飲み放題がついた、<br><span style="font-weight:bold">リーズナブルなコース料理</span>をご用意しております。<br>駅からのアクセスも抜群！<br>スタッフ一同心よりお待ちいたしております。</p>
+        <p><a class="to-access" href="#access">>>ご予約はこちら</a></p>
+      </div>
+      <div class="party-right scrollme">
+        <img class="animateme" src="./assets/img/party.jpg" alt="写真です" data-when="enter"
+        data-translatey="0"
+        data-translatex="1000"
+        data-opacity="0"
+        data-to="0.1"
+        data-from="0.9">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="announce scrollme">
+    <h1 class="photogra-title animateme" data-scale="0.5"
+    data-to="0.05"
+    data-from="0.25"
+    data-when="enter">photo gallery</h1>
+    <div class="multiple-items">
+      <img src="./assets/img/photogarary/102377515.jpg" alt="">
+      <img src="./assets/img/photogarary/enter.jpg" alt="">
+      <img src="./assets/img/photogarary/morimori.jpg" alt="">
+      <img src="./assets/img/photogarary/niku.jpg" alt="">
+      <img src="./assets/img/photogarary/kanban.jpg" alt="">
+      <img src="./assets/img/photogarary/party2.jpg" alt="">
+      <img src="./assets/img/photogarary/reba.jpg" alt="">
+      <img src="./assets/img/photogarary/L1001056-1024x681.jpg" alt="">
+    </div>
+  </div>
+
+<section id="access"></section>
+  <div id="access" class="access scrollme">
+    <h1 class="access-title animateme" data-scale="0.5"
+    data-to="0.05"
+    data-from="0.25"
+    data-when="enter">Access</h1>
+    <div class="form">
+      <div class="access-left">
+        <dl>
+          <dt>Phone:  <a href="tel:03-5453-7002">03-5453-7002</a></dt>
+          <dt>Address:  東京都渋谷区上原1-32-18 サリタスビルB1</dt>
+          <dt>Email:  miyamotogaku@gmail.com</dt>
+        </dl>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.324917350813!2d139.67813471534492!3d35.66900078019712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f347e61a3d6b%3A0x3f6015e3030a5b5a!2zMzYuNeKEgyBLaXRjaGVu!5e0!3m2!1sja!2sus!4v1598069602772!5m2!1sja!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+
+      
+      <div class="access-right">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc5Xsj2MDWDXmfHI3wSVPoIIug1Pd_0nHohMZRBtwmwu-ihWg/formResponse">
+            <div class="cont">
+              <form action="">
+                <dl>
+                  <h3>Contact form</h3>
+                  <!-- <dt>お名前</dt> -->
+                  <dd><input type="text" name="entry.1780139023" placeholder="お名前*" class="space"></dd>
+                </dl>
+                <dl>
+                  <!-- <dt>Email</dt> -->
+                  <dd><input type="email" name="entry.1591183826" placeholder="Email*" class="space"></dd>
+                </dl>
+                <dl>
+                  <!-- <dt>件名</dt> -->
+                  <dd><input type="text" name="entry.652707748" placeholder="件名" class="space"></dd>
+                </dl>
+                <dl>
+                  <!-- <dt>メッセージ</dt> -->
+                  <dd><textarea name="entry.53350570" placeholder="メッセージ" id="" cols="30" rows="10" class="space"></textarea></dd>
+                </dl>
+                <dl>
+                  <dd><input type="submit" value="送信" class="push"></dd>
+                </dl>
+              </form>
+            </div>    
+  
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <h1>36.5℃ kitchen All Rights Reserved</h1>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.scrollme.min.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+</html>
